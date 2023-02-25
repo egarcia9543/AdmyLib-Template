@@ -1,0 +1,25 @@
+.buttons__container {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.buttons a {
+    text-decoration: none;
+    margin: 80px;
+    padding: 20px;
+    border: solid 1px black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.admin {
+    color: black;
+    background-color: antiquewhite;
+}
+
+.user {
+    color: antiquewhite;
+    background-color: black;
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border-bottom: solid 1px #DADDD8;
+}
+
+header .header__nav,
+header .nav__list { 
+    width: 100%;
+    height: 100%;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item h1 {
+    font-size: 1.8rem;
+}
+
+.prestamo__container {
+    width: 100%;
+    height: auto;
+}
+
+.prestamo__info {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3e3e3;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.book__img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}

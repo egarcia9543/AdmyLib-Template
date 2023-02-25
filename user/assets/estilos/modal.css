@@ -1,0 +1,43 @@
+/* Estilos de modales */
+.font2r {
+    font-size: 2rem;
+}
+
+.font2r h2 {
+    font-size: 2.4rem;
+}
+
+.font2r input {
+    font-size: 1.6rem;
+}
+
+.font2r .button-fontsize {
+    font-size: 1.6rem; 
+}
+
+.font2r select {
+    font-size: 1.6rem;
+}
+
+/* Estilos de modales */
+.font2r {
+    font-size: 2rem;
+}
+
+.font2r h2 {
+    font-size: 2.4rem;
+}
+
+.font2r input,
+.font2r textarea {
+    font-size: 1.6rem;
+}
+
+.font2r .button-fontsize {
+    font-size: 1.6rem; 
+}
+
+.modal-body form .form-check {
+    display: flex;
+    align-items: center;
+}

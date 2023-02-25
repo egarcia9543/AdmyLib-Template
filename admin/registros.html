@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/estilos/catalogacionStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#opac').DataTable();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav__container">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <div class="modulo__info">
+                        <img src="./assets/imagenes/circulacion.png" alt="" class="modulo__icon">
+                        <a href="./circulacion.html" class="modulo__name">Circulación</a>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="modulo__info">
+                        <img src="./assets/imagenes/pie-chart.png" alt="" class="modulo__icon">
+                        <a href="" class="modulo__name">Informes</a>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="modulo__info">
+                        <img src="./assets/imagenes/date.png" alt="" class="modulo__icon">
+                        <a href="" class="modulo__name">Reservas</a>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="modulo__info">
+                        <img src="./assets/imagenes/mace.png" alt="" class="modulo__icon">
+                        <a href="" class="modulo__name">Sanciones</a>
+                    </div>
+                </li>
+
+                <li class="nav__item">
+                    <div class="modulo__info">
+                        <img src="./assets/imagenes/id-card.png" alt="" class="modulo__icon">
+                        <a href="" class="modulo__name">Usuarios</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main__content">
+        <aside>
+            <div class="menu">
+                <p class="menu__title">Catalogación</p>
+                <div class="menu__item">
+                    <img src="./assets/imagenes/add.png" alt="" class="item__icon">
+                    <a href="./catalogacion.html" class="item__name">Nuevo registro</a>
+                </div>
+                <div class="menu__item">
+                    <img src="./assets/imagenes/list.png" alt="" class="item__icon">
+                    <a href="./registros.html" class="item__name">Ver registros</a>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="modulo__container">
+                <div class="modulo__selected">
+                    <p>Ver registros</p>
+                </div>
+                <div class="modulo__selected--content">
+                    <div class="d-flex justify-content-center registers-list mt-4">
+                        <div class="container">
+                            <table id="opac" class="display table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Título</th>
+                                        <th>Autor</th>
+                                        <th>Editorial</th>
+                                        <th>Materia(s)</th>
+                                        <th>Idioma</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Harry Potter y las reliquias de la muerte</td>
+                                        <td>J. K. Rowling</td>
+                                        <td>Salamandra</td>
+                                        <td>Novela inglesa</td>
+                                        <td>Español</td>
+                                        <td>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                                data-target="#verMas1"><i class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                                data-target="#editar"><i class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal"
+                                                data-target="#delete"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Harry Potter y la piedra filosofal</td>
+                                        <td>J. K. Rowling</td>
+                                        <td>Salamandra</td>
+                                        <td>Novela inglesa</td>
+                                        <td>Español</td>
+                                        <td>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                            data-target="#verMas1"><i
+                                                    class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                            data-target="#editar"><i
+                                                    class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal"
+                                            data-target="#delete"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>De la Tierra a la Luna</td>
+                                        <td>Julio Verne</td>
+                                        <td>Planeta de Agostini</td>
+                                        <td>Novela de ciencia ficción</td>
+                                        <td>Español</td>
+                                        <td>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                            data-target="#verMas1"><i
+                                                    class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-light border-dark" data-toggle="modal"
+                                            data-target="#editar"><i
+                                                    class="fa fa-edit"></i></button>
+                                            <button type="button" class="btn btn-danger" data-toggle="modal"
+                                            data-target="#delete"><i class="fa fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

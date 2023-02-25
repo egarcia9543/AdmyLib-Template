@@ -1,0 +1,61 @@
+
+.header {
+    width: 100%;
+    height: 12rem;
+}
+
+.header .navbar {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FAFAFF;
+    padding: 0;
+}
+
+.navbar__left,
+.navbar__right {
+    height: auto;
+    width: 100%;
+}
+
+.header .navbar .navbar__left {
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .navbar__left img {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 2rem;
+    object-fit: contain;
+}
+
+.header .navbar .navbar__left h2 {
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.header .navbar .navbar__right {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .navbar .navbar__right a {
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: #1C1C1C;
+}
+
+.header .navbar .navbar__right .nav-btn .btn {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.6rem;
+}
+
+.header .navbar .navbar__right .nav-btn .btn i {
+    font-size: 1.6rem;
+}

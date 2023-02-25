@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdmyLib</title>
+    <link rel="stylesheet" href="./assets/estilos/style.css">
+    <link rel="stylesheet" href="./assets/estilos/modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__left">
+                <img src="./assets/imagenes/logobpc.png" alt="">
+                <h2>Biblioteca Pública Campiñas</h2>
+            </div>
+            <ul class="navbar__right">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Catálogo</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./catalogoVerPublico.html">Ver catálogo</a>
+                        <a class="dropdown-item" href="opac.html">Búsqueda Avanzada</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Servicios</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="./prestamos.html">Préstamos</a>
+                    </div>
+                </li>
+                <li><a href="#institutional-info">Institucional</a></li>
+                <li><a href="#contact-section">Contacto</a></li>
+                <li class="nav-btn">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#registro">
+                        <i class="fa fa-sign-in"></i>
+                    </button>
+                </li>
+                <li class="nav-btn">
+                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#login">
+                        <i class="fa fa-user-circle"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section section__one" id="section__one">
+            <div class="search__container">
+                <form action="" class="searchbar">
+                    <label for="search__input">
+                        <span>Búsqueda rápida en el Catálogo</span>
+                    </label>
+                    <div class="searchbar__container">
+                        <span class="searchbar__icon"></span>
+                        <input type="text" id="search__input" placeholder="Ingresa un título o palabra clave">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section__two">
+            <div class="swiper mySwiper">
+                <p class="section__title">Recomendados</p>
+                <div class="books__container swiper-wrapper">
+                    <div class="book__img swiper-slide">
+                        <img src="./assets/imagenes/recomendado1.jpeg"
+                            alt="Portada El extraño caso del Dr Jekyll y Mr Hyde">
+                    </div>
+
+                    <div class="book__img swiper-slide">
+                        <img src="./assets/imagenes/recomendado2.jpg" alt="Portada La llamada de Cthulu">
+                    </div>
+
+                    <div class="book__img swiper-slide">
+                        <img src="./assets/imagenes/recomendado3.jpg"
+                            alt="Portada Veinte mil leguas de viaje submarino">
+                    </div>
+
+                    <div class="book__img swiper-slide">
+                        <img src="./assets/imagenes/recomendado4.jpg" alt="Portada Fuego y Sangre">
+                    </div>
+
+                    <div class="book__img swiper-slide">
+                        <img src="./assets/imagenes/recomendado3.jpg"
+                            alt="Portada Veinte mil leguas de viaje submarino">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section section__three">
+            <div class="calendar__container">
+                <p class="section__title title--three">Calendario de Actividades</p>
+                <iframe class="embed-responsive-item mt-2"
+                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23616161&ctz=America%2FBogota&showTitle=0&showDate=0&showPrint=0&showCalendars=0&showTz=0&showTabs=0&hl=es&src=ZWdhcmNpYTk1NDNAbWlzZW5hLmVkdS5jbw&src=ZXMuY28jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%230B8043"
+                    width="600px" height="400px"></iframe>
+            </div>
+        </section>
+
+        <section class="section section__four">
+            <span class="section__title">Nuestros Cursos</span>
+            <div class="cards__container">
+                <div class="cardct">
+                    <div class="face face1">
+                        <div class="card__content">
+                            <img src="./assets/imagenes/cursoRo.png" alt="Imagen curso Python">
+                            <h3>Robótica</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="card__content">
+                            <p>Toda la información relacionada con el curso va aquí</p>
+                            <button type="button" data-toggle="modal" data-target="#inscripcion">Inscribirse</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardct">
+                    <div class="face face1">
+                        <div class="card__content">
+                            <img src="./assets/imagenes/cursoPy.png" alt="Imagen curso Python">
+                            <h3>Python</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="card__content">
+                            <p>Toda la información relacionada con el curso va aquí</p>
+                            <button type="button" data-toggle="modal" data-target="#inscripcion">Inscribirse</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardct">
+                    <div class="face face1">
+                        <div class="card__content">
+                            <img src="./assets/imagenes/cursoArt.png" alt="Imagen curso Python">
+                            <h3>Artístico</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="card__content">
+                            <p>Toda la información relacionada con el curso va aquí</p>
+                            <button type="button" data-toggle="modal" data-target="#inscripcion">Inscribirse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section__five" id="institutional-info">
+            <div class="about__content">
+                <div class="title">
+                    <span class="section__title about__title">Sobre nosotros</span>
+                </div>
+                <div class="description">
+                    <h3 class="section__title about__title">Bienvenidos</h3>
+                    <p>En la biblioteca recibimos y conservamos ejemplares de todos los libros publicados en el país.
+                        Además, atesoramos una valiosísima colección de incunables, manuscritos, estampas, dibujos,
+                        fotografías y grabaciones sonoras...</p>
+                    <p>Para poder consultar estos fondos basta con tener un carné
+                        de lector o investigador. Las Salas de Exposiciones y el Museo de la Biblioteca, donde se
+                        realizan diversas exposiciones y actividades culturales, están abiertas a todos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section__six" id="contact-section">
+            <div class="contact__container">
+                <div class="contact__left">
+                    <span class="section__title">Ubicación</span>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.8279947080196!2d-75.60833759570296!3d6.180814876638257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46823b07fa76e7%3A0xd858c9c2ddf4b118!2sSENA%20Complejo%20Sur%20Itag%C3%BC%C3%AD!5e0!3m2!1ses!2sco!4v1669520454437!5m2!1ses!2sco"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact__right">
+                    <span class="section__title">Formulario de Contacto</span>
+                    <form action="">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="name">Nombre:</label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu Nombre" id="name">
+                            </div>
+                            <div class="form-group col">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="text" class="form-control" placeholder="Ingresa tu Correo" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="msg">Mensaje:</label>
+                            <textarea class="form-control" id="msg" rows="16"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__contact">
+                    <h4>Contacto</h4>
+                    <p>Teléfono: 4488123</p>
+                    <p>WhatsApp: 3017621067</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/"><img src="./assets/imagenes/facebook.png"
+                                alt="Logo facebook"></a>
+                        <a href="https://www.instagram.com/"><img src="./assets/imagenes/instagram.png"
+                                alt="Logo instagram"></a>
+                    </div>
+                </div>
+                <div class="footer__address">
+                    <h4>Dirección</h4>
+                    <p>Cl. 63 #58B-03</p>
+                    <p>Itagüí</p>
+                </div>
+                <div class="footer__schedule">
+                    <h4>Horarios</h4>
+                    <div class="schedules">
+                        <div class="services">
+                            <p>SERVICIOS BIBLIOTECARIOS</p>
+                            <p>De lunes a viernes</p>
+                            <p>8:00 am a 5:00 pm</p>
+                        </div>
+                        <div class="expo">
+                            <p>EXPOSICIONES</p>
+                            <p>De lunes a viernes</p>
+                            <p>de 10:00 am a 5:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal login-->
+    <div class="modal fade font2r" id="login" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="loginModalLabel">Iniciar sesión</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Nombre de usuario</label>
+                            <input type="text" class="form-control" id="username"
+                                placeholder="Ingrese su nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Ingrese su contraseña">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Recordarme</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success button-fontsize">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal registro-->
+    <div class="modal fade font2r" id="registro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Registrarse</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Usuario:</label>
+                            <input type="text" class="form-control" placeholder="Ingrese su usuario" id="user">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Contraseña:</label>
+                            <input type="password" class="form-control" placeholder="Ingrese su contraseña" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="rpt-pwd">Repetir contraseña:</label>
+                            <input type="password" class="form-control" placeholder="Repita su contraseña" id="rpt-pwd">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success button-fontsize">Enviar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Inscripcion-->
+    <div class="modal fade font2r" id="inscripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Inscribirse</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <label>Horarios</label>
+                            <select name="" id="idioma" class="form-control">
+                                <option selected>Selecciona un horario</option>
+                                <option>8:00 - 10:00</option>
+                                <option>10:00 - 12:00</option>
+                                <option>14:00 - 16:00</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success button-fontsize">Enviar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            slidesPerGroup: 4,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
